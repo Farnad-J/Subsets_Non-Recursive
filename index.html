@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculating the subsets of a set</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- jQuery is used to handle click events of the buttons and to access and manipulate the contents of the DOM objects on the screen. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
+  </head>
+  <body>
+    <h1>Subsets of a set</h1>
+    <div>
+      <!-- These divs are used for handling arrangement issues when the screen size changes. -->
+      <!-- This section contains the input elements including a text, a readonly textarea and a few buttons -->
+      <div id="input">
+          <fieldset>
+            <legend>The set's members</legend>
+            <label for="member">Member: </label>
+            <input type="text" id="member" name="member" maxlength="14"></input>
+            <button name="add" class="button" id="addMember">Add member</button> <br /> <br />
+            <label for="members">Set: </label> <br />
+            <!-- The textarea is readonly and its content will be changed by the script. -->
+            <textarea name="set" id="set" rows="5" cols="40" readonly="readonly">{}</textarea> <br />
+            <button name="removeAll" class="button" id="removeAll">Remove all members</button> <br />
+          </fieldset>
+          <input type="submit" class="button" id="submit" value="Calculate subsets"></input>
+      </div>
+      <!-- This section contains the output information including a readonly textarea and a p tag (which is hidden by default) -->
+      <div id="output">
+        <fieldset>
+          <legend>The result</legend>
+          <label for="result">The subsets are:</label> <br />
+          <!-- The textarea is readonly and its content will be changed by the script. -->
+          <textarea id="result" rows="9" cols="60" readonly="readonly"></textarea>
+          <p id="membersNumber">The number of subsets is: </p>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+/* Resetting default CSS rules */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  /* Setting the linear gradient background including the vendor prefixes. */
+  background: rgb(246, 255, 196);
+  background: linear-gradient(bottom, rgb(246, 255, 196), rgb(224, 255, 53));
+  background: -webkit-linear-gradient(bottom, rgb(246, 255, 196), rgb(224, 255, 53));
+  background: -moz-linear-gradient(bottom, rgb(246, 255, 196), rgb(224, 255, 53));
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  height: 600px;
+}
+
+/* Setting the properties of the Page Heading */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px 0 15px 0;
+}
+
+/* All divs are displayed inline-block*/
+div {
+  display: inline-block;
+}
+
+/* For the output div to handle the arrangement issues (when screen size change happens)
+   we use relative positioning.*/
+#output {
+  position: relative;
+  top: -75px;
+  margin-top: 60px;
+}
+
+/* Setting the properties of the 2 fieldsets */
+fieldset {
+  margin: 20px 25px 25px 40px;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+/* Setting common properties of the input box and the 2 textareas.*/
+input, textarea {
+  margin: 10px 15px 10px 0;
+  padding: 5px;
+  font-size: 16px;
+  /* It increases the space between letters in the text to make them more legible. */
+  letter-spacing: 0.06em;
+}
+
+/* Setting the property of the input box.*/
+#member {
+  padding: 5px;
+}
+
+/* Setting common properties of all 3 buttons*/
+.button {
+  padding: 5px 12px;
+  border-radius: 5px;
+  background-color: rgb(100, 100, 255); /*Some sort of blue*/
+  color: white;
+}
+
+/* Setting the proprietary properties of the submit button */
+#submit {
+  display: block;
+  /* The position is relative to the div above it.*/
+  position: relative;
+  top: 0px;
+  left: 180px;
+  background-color: rgb(100, 255, 100); /*Some sort of green*/
+  color: brown;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: normal;
+}
+
+/* This belongs to the p tag under the result textarea. It will be shown by the script.*/
+#membersNumber {
+  visibility: hidden;
+  font-weight: bold;
+  color: black;
+}
+
+/* This class is used for the message which shows the total number of the subsets.*/
+.important_note {
+  color: red;
+}
